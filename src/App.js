@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Front from './Front';
+import {User} from './User';
+import {Seconduser} from './User';
+import Alertfun from './Alertdfun';
+import Checkclasscomponent from './Classcomponent';
+
 
 function App() {
   return (
     <div className="App">
+      {/* <h3>Hello world</h3> */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,8 +25,26 @@ function App() {
           Learn React
         </a>
       </header>
+      <Front />
+      <User />
+      <Seconduser />
+      <Testsamefile />
+      <Checkclasscomponent />
+      <Alertfun />
     </div>
   );
+}
+
+function Testsamefile(){
+  return(
+  <div>
+    <ul class='Header-menu'>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>About</li>
+      </ul>
+  </div>
+  )
 }
 
 export default App;
